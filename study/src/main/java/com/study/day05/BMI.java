@@ -29,6 +29,8 @@ public class BMI {
 	}
 	public void setHeight(double height) {
 		this.height = height;
+		//bmi的資料要重新計算
+		this.bmi = calcBmi();
 	}
 	public double getWeight() {
 		return weight;

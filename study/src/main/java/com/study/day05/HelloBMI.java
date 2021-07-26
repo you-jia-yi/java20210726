@@ -10,9 +10,13 @@ public class HelloBMI {
 		System.out.println(b1.getWeight());
 		System.out.println(b1.getBmi());
 		
-		
 		System.out.println(b1);
-		System.out.println(b1.toString());
+		//System.out.println(b1.toString());
+		
+		//變更身高
+		b1.setHeight(188);
+		//查看屬性資料
+		System.out.println(b1);
 		
 		
 	}
