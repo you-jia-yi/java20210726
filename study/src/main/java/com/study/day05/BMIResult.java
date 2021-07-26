@@ -14,7 +14,7 @@ public class BMIResult {
 		}else if (bmiValue<=18) {
 			result = "過輕";
 		}else {
-			result = "剛剛好";
+			result = "正常";
 		}
 	}
 
