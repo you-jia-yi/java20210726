@@ -1,6 +1,5 @@
 package com.study.day10;
-
-import java.security.PublicKey;
+import java.util.Random;
 
 // 共用的工具程式
 public class Util {
@@ -69,4 +68,34 @@ public class Util {
 			}
 		}
 	}
+	// 洗牌
+		public static void shuffle(int[] array) {
+			// 洗牌邏輯(隨機)
+			for (int count = 0; count < array.length; count++) {
+				// 任意二組資料交換
+				Random random = new Random();
+				int i = random.nextInt(array.length);
+				int j = random.nextInt(array.length);
+				int a = array[i];
+				int b = array[j];
+				array[i] = b;
+				array[j] = a;
+			}
+		}
+		// 標準差
+		public static double getSD(int[] array) {
+			double h_avg = Util.getAvg(array);
+			double h_sum = 0;
+			for(int i=0;i<array.length;i++) {
+				h_sum += Math.pow(array[i]-h_avg, 2);
+			}
+			double sd = Math.sqrt(h_sum / array.length);
+			return sd;
+		}
+		
+		// 變異係數 CV
+		public static double getCV(int[] array) {
+			double cv = getSD(array) / getAvg(array);
+			return cv;
+		}
 }
