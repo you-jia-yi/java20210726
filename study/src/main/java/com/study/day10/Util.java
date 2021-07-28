@@ -1,5 +1,7 @@
 package com.study.day10;
 
+import java.security.PublicKey;
+
 // 共用的工具程式
 public class Util {
 	// 計算總分
@@ -38,5 +40,33 @@ public class Util {
 			}
 		}
 		return min;
+	}
+	//由小到大排序
+	public static void sortASC(int[] array) {
+		for(int count = 0;count<array.length-1;count++) {
+			for(int i=0;i<array.length-1;i++) {
+				int a= array[i];
+				int b= array[i+1];
+				if(b<a) {
+					array[i]= b;
+					array[i+1]= a;
+					
+				}
+			}
+		}
+	}
+	//由大到小排序
+	public static void sortDESC(int[] array) {
+		for(int count = 0;count<array.length-1;count++) {
+			for(int i=0;i<array.length-1;i++) {
+				int a= array[i];
+				int b= array[i+1];
+				if(b>a) {
+					array[i]= b;
+					array[i+1]= a;
+					
+				}
+			}
+		}
 	}
 }

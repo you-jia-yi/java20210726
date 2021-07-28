@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ArrayDemo2 {
 
 	public static void main(String[] args) {
-		int[] scores = {90, 80, 100, 70};
+		int[] scores = {100, 80, 0, 90};
 		// 利用 Util 求出總分與平均各是多少 ?
 		int sum = Util.getSum(scores);
 		double avg = Util.getAvg(scores);
