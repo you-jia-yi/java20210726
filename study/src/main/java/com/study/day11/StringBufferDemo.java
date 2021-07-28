@@ -20,8 +20,6 @@ public class StringBufferDemo {
 		System.out.println(s1.equals(s2));
 		//StringBuilder必須先轉成字串之後再與 String 做比較
 		System.out.println(s1.equals(s2.toString()));
-		
-		
 	}
 
 }
