@@ -1,6 +1,10 @@
 package com.study.day11;
 
+import javax.swing.JMenu;
+import javax.swing.text.html.HTMLDocument.HTMLReader.HiddenAction;
+
 public class StringDemo2 {
+
 
 	public static void main(String[] args) {
 		String s1 = new String("Java");
@@ -11,11 +15,10 @@ public class StringDemo2 {
 		
 		String word = " she sell sea shell on the sea shore ";
 		word = word.trim();//去除左右空白
-		
-		
 		System.out.println(word);
 		System.out.println(word.length());
 		System.out.println(word.contains("sea"));
+		
 				
 	}
 
