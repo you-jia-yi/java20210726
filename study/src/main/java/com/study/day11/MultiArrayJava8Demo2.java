@@ -42,12 +42,7 @@ public class MultiArrayJava8Demo2 {
 		
 		System.out.println("--------------------------");
 		
-		double avg = Arrays.stream(exams)
-					.filter(e -> e.getName().equals("國文"))
-					.mapToInt(e -> e.getScore())
-					.average()
-					.getAsDouble();
-		System.out.print(avg);
+	
 	}
 
 }
