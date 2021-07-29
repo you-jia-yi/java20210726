@@ -1,17 +1,17 @@
 package com.study.day11;
 
 public class Exam {
+	
 	private String name;
-	private int score ;
+	private int score;
 	
 	public Exam() {
 		
 	}
-
+	
 	public Exam(String name, int score) {
-		this.name= name;
-		this.score =score;
-		
+		this.name = name;
+		this.score = score;
 	}
 
 	public String getName() {
@@ -30,6 +30,11 @@ public class Exam {
 		this.score = score;
 	}
 
+	@Override
+	public String toString() {
+		return "Exam [name=" + name + ", score=" + score + "]";
+	}
+	
 	
 	
 }
