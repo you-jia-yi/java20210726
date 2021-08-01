@@ -3,7 +3,6 @@ import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.TreeSet;
 
-import javax.swing.plaf.basic.BasicTreeUI.TreeCancelEditingAction;
 //元素內容不可重複的動態陣列
 public class SetDemo1 {
 
