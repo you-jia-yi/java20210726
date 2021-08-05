@@ -11,7 +11,7 @@ public class LambdaDemo3 {
 		//{"Jo", "Anita", "Vincent", "Jean"}
 		//{2, 5, 7, 4}
 		//{5, 7}
-		//12
+		//印出5, 7
 		Arrays.stream(names)
 		.mapToInt(name->name.length())			//ToIntFunction/Function
 		.filter(n -> n>=5)			  			//IntPredicate/Predicate
